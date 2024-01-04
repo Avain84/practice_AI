@@ -196,3 +196,75 @@ img {
     transform: translateY(-100%);
   }
 }
+.section2 {
+  margin-bottom: 178px;
+}
+@media (min-width: 768px) {
+  .section2 {
+    margin-bottom: 10rem;
+  }
+}
+.section2 .txt {
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .section2 .txt {
+    display: flex;
+    justify-content: end;
+  }
+}
+.section2 .txt h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+@media (min-width: 768px) {
+  .section2 .txt h3 {
+    width: 33%;
+    font-size: 2rem;
+  }
+}
+.section2 .txt p {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  .section2 .txt p {
+    width: 66%;
+    font-size: 3rem;
+  }
+}
+.section2 .no-br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .section2 .no-br {
+    display: block;
+  }
+}
+
+.service {
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .service {
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+  .service .px-5 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .service .py-10 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+.service li {
+  width: 100%;
+}
+.service h5 {
+  font-size: 2rem;
+}
+.service p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
