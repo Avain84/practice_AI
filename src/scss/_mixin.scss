@@ -3,3 +3,8 @@
     @content;
   }
 }
+@mixin desktop-l{
+  @media (min-width:1000px) {
+    @content;
+  }
+}

@@ -1,5 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500;700;900&display=swap");
 h1, h2, h3, h4, h5, p, a {
   line-height: 1.2;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.contain {
+  max-width: 1296px;
 }
 
 .logo {
@@ -106,4 +120,79 @@ h1, h2, h3, h4, h5, p, a {
 
 #mobile_menu {
   display: none;
+}
+
+.section1 {
+  margin-bottom: 62px;
+}
+@media (min-width: 768px) {
+  .section1 {
+    margin-bottom: 10rem;
+  }
+}
+.section1 h2 {
+  font-size: 3rem;
+}
+@media (min-width: 768px) {
+  .section1 h2 {
+    font-size: 90px;
+  }
+  .section1 h2 .no-br {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .section1 h2 {
+    font-size: 120px;
+  }
+}
+.section1 .btn {
+  margin-bottom: 181px;
+}
+@media (min-width: 768px) {
+  .section1 .btn {
+    margin-bottom: 100px;
+  }
+}
+
+.deco {
+  overflow: hidden;
+}
+.deco li {
+  max-width: 117px;
+}
+@media (min-width: 768px) {
+  .deco li {
+    max-width: 180px;
+  }
+}
+
+.deco1 {
+  animation: deco_animation 4s 0.7s infinite;
+}
+
+.deco2 {
+  animation: deco_animation 4s 0.4s infinite;
+}
+
+.deco3 {
+  animation: deco_animation 4s 0.1s infinite;
+}
+
+@keyframes deco_animation {
+  0% {
+    transform: translateY(100%);
+  }
+  35% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  85% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
