@@ -93,15 +93,17 @@ h1, h2, h3, h4, h5, p, a {
     display: flex;
     gap: 20px;
   }
+}
+.menu-list a {
+  font-weight: 900;
+}
+@media (min-width: 768px) {
   .menu-list a {
     padding: 12px 0;
+    font-weight: 700;
   }
 }
 
 #mobile_menu {
   display: none;
-}
-
-.font-black {
-  font-weight: 900;
 }

@@ -86,14 +86,16 @@
   @include desktop{
     display: flex;
     gap: 20px;
-    a{
+  }
+  
+  a{
+    font-weight: 900;
+    @include desktop{
       padding: 12px 0;
+      font-weight: 700;
     }
   }
 }
 #mobile_menu{
   display: none;
-}
-.font-black{
-  font-weight: 900;
 }
