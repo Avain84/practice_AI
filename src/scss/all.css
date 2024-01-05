@@ -534,3 +534,7 @@ img {
     display: none;
   }
 }
+
+.section6 {
+  border-top: 1px solid #fff;
+}
