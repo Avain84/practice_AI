@@ -1,4 +1,8 @@
 .section4{
+  margin-bottom: 40px;
+  @include desktop{
+    margin-bottom: 87px;
+  }
   &.rounded-3xl{
     @include desktop{
       border-radius: 80px;
