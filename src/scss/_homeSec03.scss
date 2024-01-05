@@ -1,0 +1,124 @@
+.section3{
+  margin-bottom: 120px;
+  @include desktop{
+    margin-bottom: 153px;
+  }
+}
+.company{
+  @include desktop{
+    margin-bottom: 160px;
+  }
+  h3{
+    @include desktop{
+      font-size: 32px;
+      margin-bottom: 5rem;
+    }
+  }
+}
+.marquee_deco{
+  overflow: hidden;
+  position: relative;
+  &::before,&::after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 160px;
+    top: 0;
+    z-index: 5;
+  }
+  &::before{
+    background-image: linear-gradient(90deg,#000,transparent);
+    left: 0;
+  }
+  &::after{
+    background-image: linear-gradient(270deg,#000,transparent);
+    right: 0;
+  }
+}
+.mar1{
+  animation: marquee 10s linear infinite;
+}
+.mar2{
+  animation: marquee 13s linear infinite;
+}
+.marquee{
+  // width: 100%;
+  @include desktop{
+    margin-bottom: 20px;
+  }
+  img{
+    width: 10rem;
+  }
+}
+@keyframes marquee {
+  0%{transform: translateX(0);}
+  100%{transform: translateX(-1080px);}
+}
+
+
+// 手機板feedback/輪播
+.swiper {
+  width: 100%;
+  height: 100%;
+  @include desktop{
+    display: none;
+  }
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: #FFFFFF14;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper{
+  margin-bottom: 2rem;
+}
+.swiper-pagination-bullet{
+  background-color: $white;
+}
+
+// 電腦版feedback
+.feedback{
+  display: none;
+  @include desktop{
+    display: block;
+  }
+  .flex{
+    @include desktop{
+      flex-wrap: wrap;
+    }
+    @include desktop-l{
+      flex-wrap: nowrap;
+    }
+  }
+  .p-10{
+    width: 48%;
+    background: #FFFFFF14;
+    @include desktop-l{
+      width: 100%;
+    }
+  }
+}
+.fbtxt{
+  min-height: 215px;
+  color: $black20;
+  flex-grow: 1;
+}
+.customer{
+  .pic{
+    overflow: hidden;
+    img{
+      border-radius: 50%;
+    }
+  }
+}

@@ -268,3 +268,145 @@ img {
   font-size: 1rem;
   line-height: 1.5;
 }
+
+.section3 {
+  margin-bottom: 120px;
+}
+@media (min-width: 768px) {
+  .section3 {
+    margin-bottom: 153px;
+  }
+}
+
+@media (min-width: 768px) {
+  .company {
+    margin-bottom: 160px;
+  }
+}
+@media (min-width: 768px) {
+  .company h3 {
+    font-size: 32px;
+    margin-bottom: 5rem;
+  }
+}
+
+.marquee_deco {
+  overflow: hidden;
+  position: relative;
+}
+.marquee_deco::before, .marquee_deco::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 160px;
+  top: 0;
+  z-index: 5;
+}
+.marquee_deco::before {
+  background-image: linear-gradient(90deg, #000, transparent);
+  left: 0;
+}
+.marquee_deco::after {
+  background-image: linear-gradient(270deg, #000, transparent);
+  right: 0;
+}
+
+.mar1 {
+  animation: marquee 10s linear infinite;
+}
+
+.mar2 {
+  animation: marquee 13s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .marquee {
+    margin-bottom: 20px;
+  }
+}
+.marquee img {
+  width: 10rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1080px);
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .swiper {
+    display: none;
+  }
+}
+
+.swiper-slide {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.0784313725);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-wrapper {
+  margin-bottom: 2rem;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+}
+
+.feedback {
+  display: none;
+}
+@media (min-width: 768px) {
+  .feedback {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .feedback .flex {
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 1000px) {
+  .feedback .flex {
+    flex-wrap: nowrap;
+  }
+}
+.feedback .p-10 {
+  width: 48%;
+  background: rgba(255, 255, 255, 0.0784313725);
+}
+@media (min-width: 1000px) {
+  .feedback .p-10 {
+    width: 100%;
+  }
+}
+
+.fbtxt {
+  min-height: 215px;
+  color: #F2F2F2;
+  flex-grow: 1;
+}
+
+.customer .pic {
+  overflow: hidden;
+}
+.customer .pic img {
+  border-radius: 50%;
+}
