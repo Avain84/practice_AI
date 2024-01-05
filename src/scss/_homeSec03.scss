@@ -93,20 +93,20 @@
   @include desktop{
     display: block;
   }
-  .flex{
-    @include desktop{
-      flex-wrap: wrap;
-    }
-    @include desktop-l{
-      flex-wrap: nowrap;
-    }
-  }
+  // .flex{
+  //   @include desktop{
+  //     flex-wrap: wrap;
+  //   }
+  //   @include desktop-l{
+  //     flex-wrap: nowrap;
+  //   }
+  // }
   .p-10{
     width: 48%;
     background: #FFFFFF14;
-    @include desktop-l{
-      width: 100%;
-    }
+    // @include desktop-l{
+      // width: 100%;
+    // }
   }
 }
 .fbtxt{

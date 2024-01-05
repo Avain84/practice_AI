@@ -122,6 +122,10 @@ img {
   display: none;
 }
 
+footer {
+  border-top: 1px solid #fff;
+}
+
 .section1 {
   margin-bottom: 62px;
 }
@@ -378,24 +382,9 @@ img {
     display: block;
   }
 }
-@media (min-width: 768px) {
-  .feedback .flex {
-    flex-wrap: wrap;
-  }
-}
-@media (min-width: 1000px) {
-  .feedback .flex {
-    flex-wrap: nowrap;
-  }
-}
 .feedback .p-10 {
   width: 48%;
   background: rgba(255, 255, 255, 0.0784313725);
-}
-@media (min-width: 1000px) {
-  .feedback .p-10 {
-    width: 100%;
-  }
 }
 
 .fbtxt {

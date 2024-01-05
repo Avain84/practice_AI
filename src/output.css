@@ -587,6 +587,10 @@ video {
   margin-top: 0.75rem;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -597,6 +601,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-16 {
@@ -689,6 +697,11 @@ video {
 
 .gap-10 {
   gap: 2.5rem;
+}
+
+.gap-x-10 {
+  -moz-column-gap: 2.5rem;
+       column-gap: 2.5rem;
 }
 
 .rounded-2xl {
@@ -867,12 +880,28 @@ video {
     margin-bottom: 5rem;
   }
 
+  .dt\:mb-0 {
+    margin-bottom: 0px;
+  }
+
   .dt\:flex {
     display: flex;
   }
 
+  .dt\:hidden {
+    display: none;
+  }
+
   .dt\:flex-row-reverse {
     flex-direction: row-reverse;
+  }
+
+  .dt\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .dt\:flex-nowrap {
+    flex-wrap: nowrap;
   }
 
   .dt\:justify-between {
@@ -884,6 +913,11 @@ video {
     padding-bottom: 5rem;
   }
 
+  .dt\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  }
+
   .dt\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -892,5 +926,20 @@ video {
   .dt\:text-8xl {
     font-size: 6rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1000px) {
+  .dt-l\:w-full {
+    width: 100%;
+  }
+
+  .dt-l\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .dt-l\:py-40 {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
   }
 }
