@@ -1125,6 +1125,10 @@ video {
     margin-bottom: 15rem;
   }
 
+  .dt\:ml-auto {
+    margin-left: auto;
+  }
+
   .dt\:flex {
     display: flex;
   }
@@ -1189,6 +1193,10 @@ video {
     gap: 1.5rem;
   }
 
+  .dt\:gap-10 {
+    gap: 2.5rem;
+  }
+
   .dt\:rounded-\[\] {
     border-radius: ;
   }
@@ -1205,6 +1213,11 @@ video {
   .dt\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
+  }
+
+  .dt\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .dt\:text-3xl {

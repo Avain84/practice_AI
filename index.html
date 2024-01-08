@@ -19,7 +19,7 @@
     ></script>
   </head>
   <body class="bg-black text-white box-border">
-    <header class="mx-3 mb-10">
+    <header class="mx-3 mb-10" id="top">
       <nav
         class="contain h-20 my-0 mx-auto flex justify-between items-center border-b border-white"
       >
@@ -619,26 +619,31 @@
         <img src="./src/imgs/logo.png" alt="AI工具王" class="h-10 w-auto">
         <ul class="flex flex-col gap-2">
           <li class="flex items-center"><a href="index.html" class="text-5xl dt:text-7xl font-black leading-tight">首頁</a></li>
-          <li class="flex items-center"><a href="index.html" class="text-5xl dt:text-7xl font-black leading-tight">定價</a></li>
+          <li class="flex items-center"><a href="price.html" class="text-5xl dt:text-7xl font-black leading-tight">定價</a></li>
       </div>
       </ul>
     </section>
 
-    <footer class="mx-3 py-5">
-      <div class="copy flex justify-between mb-3 dt:mb-0 gap-x-10">
-        <div class="py-3 font-bold">AI工具王 &copy; 2023</div>
-        <ul class="hidden dt:flex gap-5">
-          <li class="flex items-center py-3 font-bold"><a url="https://www.facebook.com/">Facebook</a></li>
+    <footer class="mx-3">
+      <div class="contain mx-auto my-0 py-5 border-t border-white">
+        <div class="py-3 dt:py-5 flex justify-between dt:justify-start gap-10">
+          <div class="font-bold">AI工具王 &copy; 2023</div>
+          <ul class="hidden dt:flex gap-5">
+            <li class="flex items-center font-bold"><a href="https://www.facebook.com/">Facebook</a></li>
+            <li class="flex items-center font-bold"><a href="https://www.twitter.com">Twitter</a></li>
+            <li class="flex items-center font-bold"><a href="https://www.Instagram.com">Instagram</a></li>
+          </ul>
+          <div class="ml-auto font-bold"></div>
+          <a href="#top">Back to top
+            <img src="./src/imgs/icons/arrow upward.png" alt="back to top" class="inline max-w-max">
+          </a>
+        </div>
+        <ul class="flex gap-5 dt:hidden">
+          <li class="flex items-center py-3 font-bold"><a href="https://www.facebook.com/">Facebook</a></li>
           <li class="flex items-center py-3 font-bold"><a href="https://www.twitter.com">Twitter</a></li>
           <li class="flex items-center py-3 font-bold"><a href="https://www.Instagram.com">Instagram</a></li>
         </ul>
-        <a href="#" class="py-3 font-bold ml-auto">Back to top</a>
       </div>
-      <ul class="flex dt:hidden gap-5">
-        <li class="flex items-center py-3 font-bold"><a url="https://www.facebook.com/">Facebook</a></li>
-        <li class="flex items-center py-3 font-bold"><a href="https://www.twitter.com">Twitter</a></li>
-        <li class="flex items-center py-3 font-bold"><a href="https://www.Instagram.com">Instagram</a></li>
-      </ul>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
