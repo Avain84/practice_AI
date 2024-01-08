@@ -474,10 +474,6 @@ button:hover, li.active button {
   }
 }
 
-.section6 {
-  border-top: 1px solid #fff;
-}
-
 details {
   overflow: hidden;
   transition: max-height 1s;
