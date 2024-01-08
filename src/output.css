@@ -571,12 +571,12 @@ video {
   margin-bottom: 4rem;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
+.mb-28 {
+  margin-bottom: 7rem;
 }
 
-.mb-32 {
-  margin-bottom: 8rem;
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-4 {
@@ -601,18 +601,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mb-40 {
-  margin-bottom: 10rem;
-}
-
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
-
-.mb-28 {
-  margin-bottom: 7rem;
 }
 
 .box-border {
@@ -865,6 +853,10 @@ video {
   padding-bottom: 1.25rem;
 }
 
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -906,14 +898,6 @@ video {
   font-weight: 300;
 }
 
-.font-semibold {
-  font-weight: 600;
-}
-
-.font-medium {
-  font-weight: 500;
-}
-
 .leading-normal {
   line-height: 1.5;
 }
@@ -925,6 +909,11 @@ video {
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-gray-200 {
+  --tw-text-opacity: 1;
+  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .text-gray-300 {
@@ -940,11 +929,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-gray-200 {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .outline-0 {
@@ -964,12 +948,12 @@ video {
     margin-bottom: 5rem;
   }
 
-  .dt\:mb-60 {
-    margin-bottom: 15rem;
-  }
-
   .dt\:mb-40 {
     margin-bottom: 10rem;
+  }
+
+  .dt\:mb-60 {
+    margin-bottom: 15rem;
   }
 
   .dt\:flex {
@@ -984,19 +968,23 @@ video {
     height: 2.5rem;
   }
 
-  .dt\:min-h-6 {
-    min-height: 1.5rem;
-  }
-
-  .dt\:min-h-64 {
-    min-height: 16rem;
+  .dt\:min-h-52 {
+    min-height: 13rem;
   }
 
   .dt\:w-2\/4 {
     width: 50%;
   }
 
-  .dt\:w-grid-2item {
+  .dt\:w-grid-4x3-1 {
+    width: calc((100% - 48px)* 1/3);
+  }
+
+  .dt\:w-grid-4x3-2 {
+    width: calc((100% - 48px)* 2/3 + 24px);
+  }
+
+  .dt\:w-grid-6x2 {
     width: calc((100% - 24px)/2);
   }
 
@@ -1038,6 +1026,11 @@ video {
     padding-bottom: 0.75rem;
   }
 
+  .dt\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
   .dt\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1058,13 +1051,32 @@ video {
     line-height: 1.5rem;
   }
 
-  .dt\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .dt\:text-7xl {
+    font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .dt\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .dt\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .dt\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
   }
 
   .dt\:font-bold {
     font-weight: 700;
+  }
+
+  .dt\:font-light {
+    font-weight: 300;
   }
 
   .dt\:leading-tight {
@@ -1073,6 +1085,14 @@ video {
 }
 
 @media (min-width: 1000px) {
+  .dt-l\:mb-40 {
+    margin-bottom: 10rem;
+  }
+
+  .dt-l\:min-h-64 {
+    min-height: 16rem;
+  }
+
   .dt-l\:w-full {
     width: 100%;
   }
@@ -1084,5 +1104,15 @@ video {
   .dt-l\:py-40 {
     padding-top: 10rem;
     padding-bottom: 10rem;
+  }
+
+  .dt-l\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
+
+  .dt-l\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
