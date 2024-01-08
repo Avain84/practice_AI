@@ -342,6 +342,21 @@ footer {
   border-radius: 50%;
 }
 
+button:hover, li.active button {
+  color: #000;
+  background-color: #eee;
+  font-weight: 700;
+}
+
+.scroll::-webkit-scrollbar {
+  width: 0;
+}
+
+.pageActive {
+  background-color: #000;
+  color: #fff;
+}
+
 .section4 {
   margin-bottom: 40px;
 }
@@ -381,11 +396,11 @@ footer {
 .section4 input[type=search] {
   flex-grow: 1;
 }
-.section4 nav .AI_nav {
+.section4 .web_AInav {
   display: none;
 }
 @media (min-width: 1000px) {
-  .section4 nav .AI_nav {
+  .section4 .web_AInav {
     display: flex;
   }
 }
@@ -397,18 +412,11 @@ footer {
     display: none;
   }
 }
-.section4 .AI_nav::-webkit-scrollbar {
-  width: 0;
-}
 .section4 .AI_nav li {
   flex-shrink: 0;
 }
 .section4 .AI_nav button {
   border-color: transparent;
-}
-.section4 button:hover, .section4 li.active button {
-  color: #000;
-  background-color: #eee;
 }
 .section4 .card li {
   overflow: hidden;
@@ -450,7 +458,7 @@ footer {
   width: 3rem;
   height: 3rem;
 }
-.section4 .pages li.active, .section4 .pages li:hover {
+.section4 .pages li:hover {
   background-color: #000;
   color: #fff;
 }

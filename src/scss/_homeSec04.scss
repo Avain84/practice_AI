@@ -1,3 +1,17 @@
+// 拉出來讓多個頁面共用
+button:hover,li.active button{
+  color: $black;
+  background-color: #eee;
+  font-weight: 700;
+}
+.scroll::-webkit-scrollbar{
+  width: 0;
+}
+.pageActive{
+  background-color: $black;
+  color: $white;
+}
+// 以下未做其他調整
 .section4{
   margin-bottom: 40px;
   @include desktop{
@@ -28,7 +42,7 @@
   input[type="search"]{
     flex-grow: 1;
   }
-  nav .AI_nav{
+  .web_AInav{
     display: none;
     @include desktop-l{
       display: flex;
@@ -39,9 +53,9 @@
     @include desktop-l{
       display: none;
     }
-    &::-webkit-scrollbar{
-      width: 0;
-    }
+    // &::-webkit-scrollbar{
+      // width: 0;
+    // }
     li{
       flex-shrink: 0;
     }
@@ -49,10 +63,10 @@
       border-color: transparent;
     }
   }
-  button:hover,li.active button{
-    color: $black;
-    background-color: #eee;
-  }
+  // button:hover,li.active button{
+  //   color: $black;
+  //   background-color: #eee;
+  // }
   .card{
     li{
       overflow: hidden;
@@ -89,7 +103,8 @@
     li{
       width: 3rem;
       height: 3rem;
-      &.active,&:hover{
+      // &.active,&:hover{
+      &:hover{
         background-color: $black;
         color: $white;
       }
