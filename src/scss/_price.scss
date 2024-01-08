@@ -1,0 +1,27 @@
+details{
+  overflow: hidden;
+  transition: max-height 1s;
+  max-height: 100px;
+  .open{
+    transition: opacity .7s;
+    max-height: 24px;
+    opacity: 1;
+  }
+  .close{
+    transition: opacity .7s;
+    max-height: 0px;
+    opacity: 0;
+  }
+}
+details[open]{
+  max-height: 350px;
+  border-width: 2px;
+  .open{
+    max-height: 0px;
+    opacity: 0;
+  }
+  .close{
+    max-height: 24px;
+    opacity: 1;
+  }
+}

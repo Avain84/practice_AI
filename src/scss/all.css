@@ -477,3 +477,32 @@ button:hover, li.active button {
 .section6 {
   border-top: 1px solid #fff;
 }
+
+details {
+  overflow: hidden;
+  transition: max-height 1s;
+  max-height: 100px;
+}
+details .open {
+  transition: opacity 0.7s;
+  max-height: 24px;
+  opacity: 1;
+}
+details .close {
+  transition: opacity 0.7s;
+  max-height: 0px;
+  opacity: 0;
+}
+
+details[open] {
+  max-height: 350px;
+  border-width: 2px;
+}
+details[open] .open {
+  max-height: 0px;
+  opacity: 0;
+}
+details[open] .close {
+  max-height: 24px;
+  opacity: 1;
+}
