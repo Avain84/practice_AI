@@ -1,21 +1,7 @@
-.section3{
-  margin-bottom: 120px;
-  @include desktop{
-    margin-bottom: 153px;
-  }
-}
-.company{
-  @include desktop{
-    margin-bottom: 160px;
-  }
-  h3{
-    @include desktop{
-      font-size: 32px;
-      margin-bottom: 5rem;
-    }
-  }
-}
 .marquee_deco{
+  img{
+    width: 10rem;
+  }
   overflow: hidden;
   position: relative;
   &::before,&::after{
@@ -35,20 +21,11 @@
     right: 0;
   }
 }
-.mar1{
+.marquee1{
   animation: marquee 10s linear infinite;
 }
-.mar2{
+.marquee2{
   animation: marquee 13s linear infinite;
-}
-.marquee{
-  // width: 100%;
-  @include desktop{
-    margin-bottom: 20px;
-  }
-  img{
-    width: 10rem;
-  }
 }
 @keyframes marquee {
   0%{transform: translateX(0);}
@@ -60,9 +37,6 @@
 .swiper {
   width: 100%;
   height: 100%;
-  @include desktop{
-    display: none;
-  }
 }
 
 .swiper-slide {
@@ -89,24 +63,8 @@
 
 // 電腦版feedback
 .feedback{
-  display: none;
-  @include desktop{
-    display: block;
-  }
-  // .flex{
-  //   @include desktop{
-  //     flex-wrap: wrap;
-  //   }
-  //   @include desktop-l{
-  //     flex-wrap: nowrap;
-  //   }
-  // }
-  .p-10{
-    width: 48%;
+  > ul > li{
     background: #FFFFFF14;
-    // @include desktop-l{
-      // width: 100%;
-    // }
   }
 }
 .fbtxt{

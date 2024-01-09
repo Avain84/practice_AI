@@ -603,6 +603,22 @@ video {
   margin-top: 0.75rem;
 }
 
+.mb-24 {
+  margin-bottom: 6rem;
+}
+
+.mb-40 {
+  margin-bottom: 10rem;
+}
+
+.mb-44 {
+  margin-bottom: 11rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .box-border {
   box-sizing: border-box;
 }
@@ -702,6 +718,10 @@ video {
 .max-w-max {
   max-width: -moz-max-content;
   max-width: max-content;
+}
+
+.max-w-28 {
+  max-width: 7rem;
 }
 
 .shrink-0 {
@@ -989,6 +1009,16 @@ video {
   line-height: 2.5rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .font-black {
   font-weight: 900;
 }
@@ -1129,6 +1159,18 @@ video {
     margin-left: auto;
   }
 
+  .dt\:mb-24 {
+    margin-bottom: 6rem;
+  }
+
+  .dt\:mb-5 {
+    margin-bottom: 1.25rem;
+  }
+
+  .dt\:block {
+    display: block;
+  }
+
   .dt\:flex {
     display: flex;
   }
@@ -1161,6 +1203,10 @@ video {
     width: calc((100% - 24px)/2);
   }
 
+  .dt\:max-w-44 {
+    max-width: 11rem;
+  }
+
   .dt\:flex-row {
     flex-direction: row;
   }
@@ -1175,6 +1221,10 @@ video {
 
   .dt\:justify-start {
     justify-content: flex-start;
+  }
+
+  .dt\:justify-end {
+    justify-content: flex-end;
   }
 
   .dt\:justify-center {
@@ -1218,6 +1268,11 @@ video {
   .dt\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .dt\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .dt\:text-3xl {
@@ -1345,6 +1400,11 @@ video {
 
   .dt-l\:text-7xl {
     font-size: 4.5rem;
+    line-height: 1;
+  }
+
+  .dt-l\:text-9xl {
+    font-size: 8rem;
     line-height: 1;
   }
 }

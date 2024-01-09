@@ -1,36 +1,3 @@
-.section1{
-  margin-bottom: 62px;
-  @include desktop{
-    margin-bottom: 10rem;
-  }
-  h2{
-    font-size: 3rem;
-    @include desktop{
-      font-size: 90px;
-      .no-br{
-        display: none;
-      }
-    }
-    @include desktop-l{
-      font-size: 120px;
-    }
-  }
-  .btn{
-    margin-bottom: 181px;
-    @include desktop{
-      margin-bottom: 100px;
-    }
-  }
-}
-.deco{
-  overflow: hidden;
-  li{
-    max-width: 117px;
-    @include desktop{
-      max-width: 180px;
-    }
-  }
-}
 .deco1{
   animation: deco_animation 4s .7s infinite;
 }
